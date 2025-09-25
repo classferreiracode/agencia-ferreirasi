@@ -1,13 +1,246 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="">
   <head>
-    <meta charset="UTF-8">
-    <link rel="icon" href="/favicon.ico">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vite App</title>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ferreria - Agência Web | Soluções Digitais Completas</title>
+    <link href="/src/main.css" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js"></script>
+    <style>
+      .hero-bg {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      }
+      .service-card:hover {
+        transform: translateY(-10px);
+        box-shadow:
+          0 20px 25px -5px rgba(0, 0, 0, 0.1),
+          0 10px 10px -5px rgba(0, 0, 0, 0.04);
+      }
+      .service-card {
+        transition: all 0.3s ease;
+      }
+    </style>
   </head>
-  <body>
+  <body class="font-sans antialiased text-gray-800">
+    <!-- Navbar -->
+    <nav class="bg-white shadow-lg fixed w-full z-10">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-16">
+          <div class="flex items-center">
+            <div class="flex-shrink-0 flex items-center">
+              <i data-feather="globe" class="text-indigo-600 h-8 w-8"></i>
+              <span class="ml-2 text-xl font-bold text-gray-900">Ferreira - Agência Web</span>
+            </div>
+          </div>
+          <div class="hidden md:ml-6 md:flex md:items-center md:space-x-8">
+            <a
+              href="#servicos"
+              class="text-gray-900 hover:text-indigo-600 px-3 py-2 text-sm font-medium"
+              >Serviços</a
+            >
+            <a
+              href="#sobre"
+              class="text-gray-900 hover:text-indigo-600 px-3 py-2 text-sm font-medium"
+              >Sobre Nós</a
+            >
+            <a
+              href="#contato"
+              class="text-gray-900 hover:text-indigo-600 px-3 py-2 text-sm font-medium"
+              >Contato</a
+            >
+            <a
+              href="#contato"
+              class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-md text-sm font-medium transition duration-300"
+              >Orçamento</a
+            >
+          </div>
+          <div class="-mr-2 flex items-center md:hidden">
+            <button
+              type="button"
+              class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
+              aria-controls="mobile-menu"
+              aria-expanded="false"
+              id="mobile-menu-button"
+            >
+              <i data-feather="menu" class="h-6 w-6"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile menu -->
+      <div class="hidden md:hidden" id="mobile-menu">
+        <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+          <a
+            href="#servicos"
+            class="text-gray-900 hover:text-indigo-600 block px-3 py-2 rounded-md text-base font-medium"
+            >Serviços</a
+          >
+          <a
+            href="#sobre"
+            class="text-gray-900 hover:text-indigo-600 block px-3 py-2 rounded-md text-base font-medium"
+            >Sobre Nós</a
+          >
+          <a
+            href="#contato"
+            class="text-gray-900 hover:text-indigo-600 block px-3 py-2 rounded-md text-base font-medium"
+            >Contato</a
+          >
+          <a
+            href="#contato"
+            class="bg-indigo-600 hover:bg-indigo-700 text-white block px-3 py-2 rounded-md text-base font-medium text-center"
+            >Orçamento</a
+          >
+        </div>
+      </div>
+    </nav>
     <div id="app"></div>
     <script type="module" src="/src/main.js"></script>
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-gray-300 py-12 px-4 sm:px-6 lg:px-8">
+      <div class="max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div>
+            <div class="flex items-center">
+              <i data-feather="globe" class="text-indigo-400 h-8 w-8"></i>
+              <span class="ml-2 text-xl font-bold text-white">Ferreira - Agência Web</span>
+            </div>
+            <p class="mt-4 text-sm">
+              Transformando ideias em realidade digital com excelência e inovação.
+            </p>
+          </div>
+          <div>
+            <h3 class="text-sm font-semibold text-white uppercase tracking-wider mb-4">Serviços</h3>
+            <ul class="space-y-2">
+              <li>
+                <a href="#" class="text-sm hover:text-indigo-400 transition duration-300"
+                  >Domínio e Hospedagem</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-sm hover:text-indigo-400 transition duration-300"
+                  >Criação de Sites</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-sm hover:text-indigo-400 transition duration-300"
+                  >Marketing Digital</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-sm hover:text-indigo-400 transition duration-300"
+                  >Design Gráfico</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-sm font-semibold text-white uppercase tracking-wider mb-4">
+              Links Úteis
+            </h3>
+            <ul class="space-y-2">
+              <li>
+                <a href="#" class="text-sm hover:text-indigo-400 transition duration-300">Blog</a>
+              </li>
+              <li>
+                <a href="#" class="text-sm hover:text-indigo-400 transition duration-300"
+                  >Portfólio</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-sm hover:text-indigo-400 transition duration-300"
+                  >Termos de Uso</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-sm hover:text-indigo-400 transition duration-300"
+                  >Política de Privacidade</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-sm font-semibold text-white uppercase tracking-wider mb-4">
+              Newsletter
+            </h3>
+            <p class="text-sm mb-4">
+              Assine nossa newsletter para receber novidades e dicas exclusivas.
+            </p>
+            <form class="flex">
+              <input
+                type="email"
+                placeholder="Seu email"
+                class="px-3 py-2 bg-gray-700 text-white text-sm rounded-l-md focus:outline-none focus:ring-1 focus:ring-indigo-500 w-full"
+              />
+              <button
+                type="submit"
+                class="bg-indigo-600 hover:bg-indigo-700 text-white px-3 py-2 rounded-r-md text-sm transition duration-300"
+              >
+                <i data-feather="send" class="h-4 w-4"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+        <div
+          class="mt-12 pt-8 border-t border-gray-700 flex flex-col md:flex-row justify-between items-center"
+        >
+          <p class="text-sm text-gray-400">
+            © 2023 Ferreira - Agência Web. Todos os direitos reservados.
+          </p>
+          <div class="mt-4 md:mt-0 flex space-x-6">
+            <a href="#" class="text-gray-400 hover:text-indigo-400 transition duration-300">
+              <i data-feather="facebook" class="h-5 w-5"></i>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-indigo-400 transition duration-300">
+              <i data-feather="instagram" class="h-5 w-5"></i>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-indigo-400 transition duration-300">
+              <i data-feather="linkedin" class="h-5 w-5"></i>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-indigo-400 transition duration-300">
+              <i data-feather="twitter" class="h-5 w-5"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Mobile menu toggle
+      document.getElementById('mobile-menu-button').addEventListener('click', function () {
+        const menu = document.getElementById('mobile-menu')
+        menu.classList.toggle('hidden')
+      })
+
+      // Vanta.js background
+      VANTA.GLOBE({
+        el: '#vanta-globe',
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.0,
+        minWidth: 200.0,
+        scale: 1.0,
+        scaleMobile: 1.0,
+        color: 0x7b6cd8,
+        backgroundColor: 0x0,
+        size: 0.8,
+      })
+
+      // Initialize AOS and Feather Icons
+      document.addEventListener('DOMContentLoaded', function () {
+        AOS.init({
+          duration: 800,
+          easing: 'ease-in-out',
+          once: true,
+        })
+        feather.replace()
+      })
+    </script>
   </body>
 </html>

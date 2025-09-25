@@ -5,7 +5,7 @@ export function createTransporter() {
     return nodemailer.createTransport({
         host: 'smtp-mail.outlook.com',
         port: 587,
-        secure: false, // STARTTLS
+        secure: true, // STARTTLS
         auth: {
             user: process.env.MAIL_USER, // coloque no .env
             pass: process.env.MAIL_PASS,

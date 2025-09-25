@@ -11,7 +11,7 @@ export default async function handler(req, res) {
         const transporter = nodemailer.createTransport({
             host: 'smtp-mail.outlook.com',
             port: 587,
-            secure: false,
+            secure: true,
             auth: {
                 user: process.env.MAIL_USER,
                 pass: process.env.MAIL_PASS,

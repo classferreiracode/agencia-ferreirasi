@@ -1,4 +1,6 @@
-<script setup></script>
+<script setup>
+import FormContact from '@/components/FormContact.vue'
+</script>
 
 <template>
     <!-- Hero Section -->
@@ -340,7 +342,7 @@
                             </div>
                             <div class="ml-3">
                                 <h4 class="text-lg font-medium">Email</h4>
-                                <p class="text-gray-400">contato@agenciaweb.com</p>
+                                <p class="text-gray-400">ferreirasi.tk@outlook.com</p>
                             </div>
                         </div>
                         <div class="flex items-start">
@@ -349,7 +351,8 @@
                             </div>
                             <div class="ml-3">
                                 <h4 class="text-lg font-medium">Telefone</h4>
-                                <p class="text-gray-400">(11) 99999-9999</p>
+                                <p class="text-gray-400">(15) 99160-6104</p>
+                                <p class="text-gray-400">(15) 99675-5266</p>
                             </div>
                         </div>
                         <div class="flex items-start">
@@ -358,7 +361,7 @@
                             </div>
                             <div class="ml-3">
                                 <h4 class="text-lg font-medium">Endereço</h4>
-                                <p class="text-gray-400">Av. Paulista, 1000 - São Paulo/SP</p>
+                                <p class="text-gray-400">Sorocaba - SP</p>
                             </div>
                         </div>
                     </div>
@@ -395,78 +398,7 @@
                 </div>
 
                 <div data-aos="fade-left">
-                    <form class="space-y-6">
-                        <div>
-                            <label for="name" class="block text-sm font-medium text-gray-300"
-                                >Nome</label
-                            >
-                            <input
-                                type="text"
-                                id="name"
-                                name="name"
-                                class="mt-1 block w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-md text-white focus:ring-indigo-500 focus:border-indigo-500"
-                            />
-                        </div>
-                        <div>
-                            <label for="email" class="block text-sm font-medium text-gray-300"
-                                >Email</label
-                            >
-                            <input
-                                type="email"
-                                id="email"
-                                name="email"
-                                class="mt-1 block w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-md text-white focus:ring-indigo-500 focus:border-indigo-500"
-                            />
-                        </div>
-                        <div>
-                            <label for="phone" class="block text-sm font-medium text-gray-300"
-                                >Telefone</label
-                            >
-                            <input
-                                type="tel"
-                                id="phone"
-                                name="phone"
-                                class="mt-1 block w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-md text-white focus:ring-indigo-500 focus:border-indigo-500"
-                            />
-                        </div>
-                        <div>
-                            <label for="service" class="block text-sm font-medium text-gray-300"
-                                >Serviço de interesse</label
-                            >
-                            <select
-                                id="service"
-                                name="service"
-                                class="mt-1 block w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-md text-white focus:ring-indigo-500 focus:border-indigo-500"
-                            >
-                                <option>Selecione um serviço</option>
-                                <option>Domínio e Hospedagem</option>
-                                <option>Criação de Site</option>
-                                <option>Marketing Digital</option>
-                                <option>Design para Redes Sociais</option>
-                                <option>Manutenção de Site</option>
-                                <option>Outro</option>
-                            </select>
-                        </div>
-                        <div>
-                            <label for="message" class="block text-sm font-medium text-gray-300"
-                                >Mensagem</label
-                            >
-                            <textarea
-                                id="message"
-                                name="message"
-                                rows="4"
-                                class="mt-1 block w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-md text-white focus:ring-indigo-500 focus:border-indigo-500"
-                            ></textarea>
-                        </div>
-                        <div>
-                            <button
-                                type="submit"
-                                class="w-full flex justify-center py-3 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition duration-300"
-                            >
-                                Enviar Mensagem
-                            </button>
-                        </div>
-                    </form>
+                    <FormContact />
                 </div>
             </div>
         </div>

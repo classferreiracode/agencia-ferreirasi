@@ -15,15 +15,18 @@
         <FormTextarea v-model="form.message" label="Mensagem" />
         <span v-if="errors.message" class="error">{{ errors.message }}</span>
 
-        <button
-            type="submit"
-            class="w-full flex justify-center py-3 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition duration-300"
-        >
-            Enviar Mensagem
-        </button>
-
-        <p v-if="successMessage" class="success">{{ successMessage }}</p>
-        <p v-if="errorMessage" class="error">{{ errorMessage }}</p>
+        <div>
+            <button
+                type="submit"
+                class="w-full flex justify-center py-3 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition duration-300"
+            >
+                Enviar Mensagem
+            </button>
+        </div>
+        <div>
+            <p v-if="successMessage" class="success">{{ successMessage }}</p>
+            <p v-if="errorMessage" class="error">{{ errorMessage }}</p>
+        </div>
     </form>
 </template>
 

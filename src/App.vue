@@ -1,8 +1,10 @@
 <script setup>
 import FormContact from '@/components/FormContact.vue'
+import { SpeedInsights } from '@vercel/speed-insights/vue'
 </script>
 
 <template>
+    <SpeedInsights />
     <!-- Hero Section -->
     <div id="vanta-globe" class="hero-bg text-white pt-32 pb-20 px-4 sm:px-6 lg:px-8">
         <div class="max-w-7xl mx-auto">
